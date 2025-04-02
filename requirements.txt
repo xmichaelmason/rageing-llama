@@ -1,0 +1,5 @@
+dotenv
+transformers[torch]
+sentence-transformers
+pillow
+sqlite-vec

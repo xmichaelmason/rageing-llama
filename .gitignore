@@ -1,0 +1,10 @@
+.env
+*.db
+
+.venv/
+models/
+documents/
+
+__pycache__/
+*.pyc
+*.pyo
