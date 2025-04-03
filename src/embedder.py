@@ -4,12 +4,9 @@ from sentence_transformers import SentenceTransformer
 
 load_dotenv()
 
-sentences = ["This is an example sentence", "Each sentence is converted"]
-
-
-def get_embeddings(sentences) -> list:
+def get_embeddings(text) -> list:
     model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
-    embeddings = model.encode(sentences)
+    embeddings = model.encode(text)
     return embeddings
 
 if __name__ == "__main__":
