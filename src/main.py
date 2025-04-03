@@ -16,7 +16,7 @@ db.enable_load_extension(False)
 
 db.execute(
     """
-        CREATE TABLE IF NOT EXISTS documents(
+        CREATE VIRTUAL TABLE IF NOT EXISTS documents using vec0(
           id INTEGER PRIMARY KEY,
           type TEXT,
           path TEXT,
